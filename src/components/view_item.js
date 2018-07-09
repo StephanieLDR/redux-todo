@@ -15,7 +15,7 @@ class ViewItem extends Component {
 
     async componentDidMount() {
         const{item_id} =this.props.match.params;
-        
+
         //console.log("item id: ", item_id);
        try {
            const resp= await this.props.getSingleItem(item_id);
